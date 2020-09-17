@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prova Final</title>
+	
+		<meta charset-"utf-8">
+		<script src=java.js></script>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+	</head>
+	<body>
+	<div class="container">
+		<h1>Cadastro<br></h1>
+		<form class="row">
+		
+			<div class="col-4">
+			<label>Nome:</label>
+			<input type="text" name="nome"class="form-control"/>
+			</div>
+			
+			<div class="col-2">
+			<label>Data de nascimento:</label>
+			<input type="date" name="data"class="form-control"/>
+			</div>
+			
+			<div class="col-1">
+			<label>Ano:</label>
+			<input type="number" name="ano"class="form-control"/>
+			</div>
+			
+			<div class="col-2">
+			<label>Matéria Preferida:</label>
+			<input type="text" name="materia"class="form-control"/>
+			</div>
+			
+			<div class="col-1">
+			<button type="submit" class="alert alert-warning" style="margin-top: 30px"onclick="limparcampo();">Limpar</button>
+			</div>
+			<div class="col-1">
+			<button type="submit" class="alert alert-success" style="margin-top: 30px" onclick="salvar()">Salvar</button>
+			</div>
+		</form>
+		</br>
+		<table class="table table-striped" >
+			<colgroup>
+				<col width="400">
+				<col width="200">
+				<col width="100">
+				<col width="300">
+				<col width="50">
+				<col width="50">
+			</colgroup>
+			
+				<thead>
+					<tr class="table-active">
+						<th >Nome:</th>
+						<th >Data de Nascimento:</th>
+						<th >Ano:</th>
+						<th >Matéria Preferida:</th>
+						<th ></th>
+						<th ></th>
+					</tr>
+				<thead>
+				</tbody>
+				<tr size="6">
+				<td >Fulano Ciclano da Silva</td>
+				<td> 12/12/2012</td>
+				<td>3</td>
+				<td>Artes</td>
+				<td><button type="submit" class="alert alert-warning" style="margin-top: 30px"onclick="editar();">Editar</button></td>
+			<td><button type="reset" class="alert alert-danger" style="margin-top: 30px"onclick="calcularimc();">Excluir</button></td>
+				</tr>
+		</table>
+		
+	</body>
+</html>
